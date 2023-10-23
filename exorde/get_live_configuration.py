@@ -25,7 +25,7 @@ def logic(implementation: Callable) -> Callable:
 async def implementation() -> LiveConfiguration:
     async with aiohttp.ClientSession() as session:
         async with session.get(
-            "https://raw.githubusercontent.com/exorde-labs/TestnetProtocol/main/targets/runtime.json"
+            "https://raw.githubusercontent.com/loewa86/TestnetProtocol/main/targets/runtime.json"
         ) as response:
             data = json.loads(await response.text())
             return LiveConfiguration(**data)
