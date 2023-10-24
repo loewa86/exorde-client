@@ -31,7 +31,7 @@ setup(
         "keybert==0.7.0",
         "nltk==3.6.2",
         "safetensors==0.3.1",
-        "numpy==1.23.4",
+        "numpy>=1.23.4",
         "tiktoken==0.4.0",
         "feedparser==6.0.8",
         "python_dateutil==2.8.2",
